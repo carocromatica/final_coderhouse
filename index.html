@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Caro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+     
+    <link rel="stylesheet" href="css/bs-overrides.css">
+    <link rel="stylesheet" href="css/blobs.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+
+
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/Logo_de_caro.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Portafolio
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                            <li><a class="dropdown-item" href="envo.html">Envo Chat</a></li>
+                            <li><a class="dropdown-item" href="kibernum.html">Kibernum</a></li>
+                            <li><a class="dropdown-item" href="#proyecto3">Proyecto 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="hero-image">
+                        <img src="assets/retrato.png" alt="retrato de caro">
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-md-start">
+                    <h1>Hola! soy Caro</h1>
+                    <p class="lead">Diseñadora especializada en experiencia e interfaz de usuario (UX/UI).</p>
+                    <p>Con más de 6 años trabajando en fábricas de software, conecto negocios y personas usuarias
+                        mediante el diseño.</p>
+                    <a href="#portfolio" class="btn btn-primary">Conoce mi portafolio</a>
+                    <a href="#" class="btn btn-outline-secondary">Mi CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container experience-section">
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12 d-flex align-items-center">
+                <h2 class="section-title text-center">Experiencias que conectan</h2>
+            </div>
+            <div class="col-md-6 col-sm-12 experience-description">
+                <p>La creación de software es un trabajo multidisciplinario en el que transformo las inquietudes del
+                    negocio y las necesidades de los usuarios en interfaces usables y accesibles.</p>
+                <p>Este proceso lo llevo a cabo mediante metodologías de investigación, arquitectura de la información y
+                    diseño visual, en coordinación con los procesos de desarrollo.</p>
+                <p>Dando como resultado un producto diseñado para resolver necesidades y generar impacto real.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container services-section" id="services">
+        <h2 class="section-title text-center">Servicios de diseño con propósito</h2>
+        <p class="text-center">Mi trabajo abarca cada etapa del proceso de diseño, asegurando que las soluciones
+            digitales sean funcionales, atractivas y estén alineadas con las necesidades de usuarios y equipos.</p>
+        <div class="row text-center">
+            <div class="col-md-4 p-3"><strong>Research:</strong> Comprendo a los usuarios mediante metodologías
+                cualitativas y cuantitativas.</div>
+            <div class="col-md-4 p-3"><strong>Arquitectura de Información:</strong> Organizo y estructuro el contenido
+                para garantizar claridad y navegabilidad.</div>
+            <div class="col-md-4 p-3"><strong>Diseño de Interfaces (UI):</strong> Creo interfaces visuales consistentes,
+                accesibles y atractivas.</div>
+            <div class="col-md-4 p-3"><strong>Service Design:</strong> Diseños integrales que conectan servicios y
+                puntos de contacto para experiencias fluidas.</div>
+            <div class="col-md-4 p-3"><strong>Design Ops:</strong> Optimización de procesos y herramientas de diseño
+                para mejorar la colaboración y la eficiencia.</div>
+            <div class="col-md-4 p-3"><strong>Workshops:</strong> Facilito sesiones de co-creación como product
+                discovery, diseño de canvas y otras dinámicas para alinear equipos y objetivos.</div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="container py-5">
+        <h2 class="section-title text-center">Explora mi trabajo</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="assets/envo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Envo chat</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="envo.html" class="btn btn-primary">Ver proyecto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="assets/afex.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Afex Connect</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Ver proyecto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="assets/kibernum.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sitio web Kibernum 2020</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Ver proyecto</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class=" py-5">
+        <div class="container text-center">
+            <h2>Trabajemos juntos!</h2>
+            <p>Estoy disponible para colaborar en proyectos de diseño y experiencias digitales.</p>
+            <p>Email: xxxxxxxx</p>
+            <p>LinkedIn: xxxxxxxx</p>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            window.addEventListener("scroll", function() {
+                let navbar = document.getElementById("navbar");
+                if (window.scrollY > 50) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

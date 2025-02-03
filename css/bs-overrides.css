@@ -1,0 +1,33 @@
+
+:root {
+    --bs-primary: #ffc219; /* Amarillo */
+    --bs-primary-rgb: 255, 194, 25; /* Valor RGB para efectos */
+}
+
+body {
+    font-family: "Poppins", serif;
+    font-optical-sizing: auto;
+    color: #0A1C28;
+}
+
+
+.btn-primary {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+}
+.btn-primary:hover {
+    background-color: #e0a800 !important; /* Un tono más oscuro en hover */
+    border-color: #d39e00 !important;
+}
+
+
+
+.card{
+    border: 0px;
+}
+
+
+section {
+    scroll-margin-top: 80px; /* Ajusta según la altura del navbar */
+}
+
