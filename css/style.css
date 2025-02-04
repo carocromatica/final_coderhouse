@@ -154,3 +154,14 @@
         width: 100%; 
     }
 }
+
+
+.section-kib{
+    width: 70%;
+}
+
+@media (max-width: 768px) { 
+    .section-kib {
+        width: 100%; 
+    }
+}
