@@ -132,12 +132,25 @@
 
 
 .video-wrapper {
-    width: 100%; /* Por defecto, ocupa todo el ancho */
-    max-width: 100%; /* Asegura que no se salga del contenedor */
+    width: 100%; 
+    max-width: 100%; 
 }
 
-@media (min-width: 768px) { /* En tablets y pantallas grandes */
+@media (min-width: 768px) { 
     .video-wrapper {
-        width: 80%; /* Reduce al 50% en desktop */
+        width: 80%; 
+    }
+}
+
+
+/*envo*/
+
+.section-envo{
+    width: 70%;
+}
+
+@media (max-width: 768px) { 
+    .section-envo {
+        width: 100%; 
     }
 }
