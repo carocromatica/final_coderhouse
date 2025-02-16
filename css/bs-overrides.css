@@ -20,13 +20,17 @@ body {
     border-color: #d39e00 !important;
 }
 
-
 .card{
     border: 0px;
 }
 h1{
     font-size: 5rem;
-    color: #103954;
+    background: linear-gradient(45deg, #e43060, #fcca15);
+    background-clip: text;  /* Propiedad estándar */
+    -webkit-background-clip: text;  /* Para compatibilidad con navegadores WebKit */
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* Asegura que en navegadores modernos el texto sea transparente */
+    font-weight: bold;
 }
 
 @media (max-width: 768px) { 
@@ -47,7 +51,14 @@ h3{ background: linear-gradient(45deg, #e43060, #2194cd);
         font-size: 2rem;
     }    }
 
-
+    h2{ background: linear-gradient(45deg, #e43060, #2194cd);
+        background-clip: text;  /* Propiedad estándar */
+        -webkit-background-clip: text;  /* Para compatibilidad con navegadores WebKit */
+        -webkit-text-fill-color: transparent;
+        color: transparent; /* Asegura que en navegadores modernos el texto sea transparente */
+        
+    }
+    
 p {
     font-size: 1rem;
     line-height: 2rem;

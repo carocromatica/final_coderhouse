@@ -83,7 +83,7 @@
     -webkit-background-clip: text;  /* Para compatibilidad con navegadores WebKit */
     -webkit-text-fill-color: transparent;
     color: transparent; /* Asegura que en navegadores modernos el texto sea transparente */
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
   
 }
@@ -107,7 +107,7 @@
     width: 100%;
     height: 100%;
     background-image: url(../assets/Vector\ 1.svg);
-    background-size: cover; /* Asegura que ocupe todo el div */
+    background-size: contain; /* Asegura que ocupe todo el div */
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
