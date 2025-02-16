@@ -7,7 +7,7 @@
 body {
     font-family: "Poppins", serif;
     font-optical-sizing: auto;
-    color: #0A1C28;
+    color: #102736;
 }
 
 
@@ -21,13 +21,22 @@ body {
 }
 
 
-
 .card{
     border: 0px;
 }
-
-
-section {
-    scroll-margin-top: 80px; /* Ajusta según la altura del navbar */
+h1{
+    font-size: 5rem;
 }
 
+p {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+section {
+    scroll-margin-top: 80px; /* Ajusta según la altura del navbar */
+    width: 70% !important;}
+
+@media (max-width: 768px) { 
+    section {
+        width: 100%; 
+    }    }

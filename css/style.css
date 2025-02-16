@@ -141,27 +141,3 @@
         width: 80%; 
     }
 }
-
-
-/*envo*/
-
-.section-envo{
-    width: 70%;
-}
-
-@media (max-width: 768px) { 
-    .section-envo {
-        width: 100%; 
-    }
-}
-
-
-.section-kib{
-    width: 70%;
-}
-
-@media (max-width: 768px) { 
-    .section-kib {
-        width: 100%; 
-    }
-}
