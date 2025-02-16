@@ -26,7 +26,27 @@ body {
 }
 h1{
     font-size: 5rem;
+    color: #103954;
 }
+
+@media (max-width: 768px) { 
+    h1 {
+        font-size: 3rem;
+    }    }
+
+h3{ background: linear-gradient(45deg, #e43060, #2194cd);
+    background-clip: text;  /* Propiedad estándar */
+    -webkit-background-clip: text;  /* Para compatibilidad con navegadores WebKit */
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* Asegura que en navegadores modernos el texto sea transparente */
+    font-size: 3rem;
+}
+
+@media (max-width: 768px) { 
+    h3 {
+        font-size: 2rem;
+    }    }
+
 
 p {
     font-size: 1rem;
@@ -34,9 +54,9 @@ p {
 }
 section {
     scroll-margin-top: 80px; /* Ajusta según la altura del navbar */
-    width: 70% !important;}
+    width: 70%!important;}
 
 @media (max-width: 768px) { 
     section {
-        width: 100%; 
+        width: 100% !important; 
     }    }
