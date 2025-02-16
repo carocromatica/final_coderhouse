@@ -4,29 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Caro</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Portafolio – Caro</title>
 
-    <!-- fonts-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
+    <!-- Optimización de fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&display=swap">
 
-    <!-- css -->
-     
-    <link rel="stylesheet" href="css/bs-overrides.css">
-    <link rel="stylesheet" href="css/blobs.css">
-    <link rel="stylesheet" href="css/style.css">
-   
-
-
+    <!-- CSS personalizados -->
+    <link rel="stylesheet" href="css/blobs.css"> <!-- Fondo degradados -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Estilos base -->
+    <link rel="stylesheet" href="css/bs-overrides.css"> <!-- Overrides de Bootstrap -->
 </head>
 
+
 <body>
-    <div class="background-blobs">
+
+    <div class="background-blobs" id="background-blobs">
         <div class="blob"></div>
         <div class="blob"></div>
         <div class="blob"></div>
@@ -43,7 +41,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Portafolio
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
@@ -59,105 +58,119 @@
         </div>
     </nav>
 
- 
+    <main>
+        <header id="header-envo" class="container mt-5"
+            style="background-image: url('assets/Vector 1.svg'); background-size: contain; background-repeat: no-repeat;">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <h1>Envo.chat</h1>
+                        <h2>Diseño UX y research para chat omnicanal</h2>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class=" d-flex justify-content-end">
+                        <div class="ratio ratio-4x3  ">
+                            <video controls poster="assets/envo_portada_video.jpg">
+                                <source src="assets/envo (Video).mp4" type="video/mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
+        <section id="contexto-envo" class="container mt-5" id="contexto">
+            <h3>Contexto</h3>
+            <p>Envo surge como respuesta a la creciente necesidad de conectar a las empresas con sus múltiples canales
+                de mensajería, que experimentan un flujo creciente de clientes, pero carecen de una centralización
+                efectiva. Esto conduce a una disminución significativa en la omnicanalidad. Envo presenta una solución
+                práctica: una plataforma unificada que reúne varios canales de chat automatizados (Whatsapp, Facebook,
+                webchat) en un solo lugar. Esto permite que distintos agentes respondan a las solicitudes de los
+                clientes y realicen un seguimiento independientemente del canal, optimizando así la gestión de la
+                comunicación con los clientes​​​​​​​​​​​​​​</p>
+        </section>
 
-    <section class="container mt-5" id="header-envo">
-        <h1>Envo.chat</h1>
-        <p><strong>Diseño UX y research para chat omnicanal</strong></p>
-        <div  class=" d-flex justify-content-center">
+        <section id="proceso-envo" class="container mt-5">
 
-            <div class="ratio ratio-16x9 video-wrapper ">
-                <video controls poster="assets/Bienvenida.png">
-                    <source src="assets/envo (Video).mp4" type="video/mp4">
-                    Tu navegador no soporta la reproducción de video.
-                </video>
+            <div class="row">
+                <div class="col-md-6">
+                    <div> <img src="assets/proceso_muestra.png" class="img-fluid" alt="proceso de diseño"></div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <h3>Proceso</h3>
+                        <p>Inicialmente, este proyecto empezó solo como un chatbot, pero durante
+                            el proceso de creación de Envo, llevamos a cabo una investigación exhaustiva que nos llevó a
+                            conocer sobre omnicanalidad, sistemas de tickets y plataformas de mensajería. También
+                            realizamos
+                            un análisis continuo y detallado de la competencia. Estos esfuerzos nos permitieron
+                            desarrollar
+                            una solución informada y competitiva que aborda las necesidades del mercado de manera
+                            efectiva y
+                            eficiente</p>
+                    </div>
+                </div>
+
             </div>
 
-        </div>
-       
-        <p class="text-center">Video de presentación de Envo</p>
-    </section>
-    
-    
-    <section class="container mt-5 section-envo" id="contexto">
-        <h2>Contexto</h2>
-        <p>Envo surge como respuesta a la creciente necesidad de conectar a las empresas con sus múltiples canales
-            de mensajería, que experimentan un flujo creciente de clientes, pero carecen de una centralización
-            efectiva. Esto conduce a una disminución significativa en la omnicanalidad. Envo presenta una solución
-            práctica: una plataforma unificada que reúne varios canales de chat automatizados (Whatsapp, Facebook,
-            webchat) en un solo lugar. Esto permite que distintos agentes respondan a las solicitudes de los
-            clientes y realicen un seguimiento independientemente del canal, optimizando así la gestión de la
-            comunicación con los clientes​​​​​​​​​​​​​​</p>
-    </section>
-    
-    <section class="container mt-5 section-envo" id="proceso">
-        <h2>Proceso</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <p>Inicialmente, este proyecto empezó solo como un chatbot, pero durante
-                    el proceso de creación de Envo, llevamos a cabo una investigación exhaustiva que nos llevó a
-                    conocer sobre omnicanalidad, sistemas de tickets y plataformas de mensajería. También realizamos
-                    un análisis continuo y detallado de la competencia. Estos esfuerzos nos permitieron desarrollar
-                    una solución informada y competitiva que aborda las necesidades del mercado de manera efectiva y
-                    eficiente</p>
-                <ul>
-                    <li>Investigación de usuarios y clientes</li>
-                    <li>Arquitectura de la información</li>
-                    <li>Testeo con usuarios</li>
-                    <li>Prototipos de baja y alta fidelidad</li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <div class="bg-light" style="height:200px;">...</div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="container-fluid mt-5 py-4 section-envo" id="impacto">
-        <div class="container section-envo">
-            <h2>Impacto en la compañía</h2>
-            <p> La implementación de pruebas constantes no solo transformó el proyecto Envo, sino también la forma
-                de
-                trabajar en Jumpitt. La gerencia comprendió el valor de estas pruebas y ha impulsado su integración
-                en
-                los backlogs y propuestas comerciales. Este cambio marcó un antes y un después, destacando la
-                importancia de la retroalimentación continua para mejorar la calidad y la efectividad de nuestros
-                proyectos.</p>
-        </div>
-    </section>
-    
-    <section class="container mt-5 section-envo" id="aprendizajes">
-        <h2>Aprendizajes</h2>
-        <p>Uno de los aprendizajes más significativos de este proyecto fue la importancia del trabajo en equipo. La
-            coordinación entre las diseñadoras y la comunicación efectiva con el equipo de desarrollo fueron
-            fundamentales. Este proyecto nos ayudó a madurar en nuestro proceso de UX dentro de la empresa al
-            desarrollar una metodología organizada y una documentación sólida. También nos permitió comprender los
-            aspectos técnicos del desarrollo y cómo estos influyen en el proceso de diseño. La colaboración entre
-            ambos mundos fue clave para el éxito de este proyecto.
+        </section>
 
-            Personalmente, la experiencia en Envo me brindó la oportunidad de crecer como líder en UX. Tuve la
-            responsabilidad de guiar a un equipo de diseño que recién estaba incursionando en el mundo tecnológico.
-            Además, tuve que defender nuestras decisiones ante un equipo de stakeholders que se mostraban escépticos
-            respecto a nuestras metodologías. Esto me permitió posicionarme dentro del equipo como una líder nata,
-            preocupada por el bienestar de mi equipo y el éxito del proyecto.
-        .</p>
-    </section>
+        <section id="impacto-envo" class="container my-5">
+            <div class="row">
+                <div class="col-md-4 d-flex align-items-center ">
+                    <h3>Impacto en la compañía</h3>
+                </div>
+                <div class="col-md-8 pt-5">
 
-    <section id="contact" class=" py-5">
-        <div class="container text-center">
-            <h2>Trabajemos juntos!</h2>
+                    <p> La implementación de pruebas constantes no solo transformó el proyecto Envo, sino también la
+                        forma
+                        de
+                        trabajar en Jumpitt. La gerencia comprendió el valor de estas pruebas y ha impulsado su
+                        integración
+                        en
+                        los backlogs y propuestas comerciales. Este cambio marcó un antes y un después, destacando la
+                        importancia de la retroalimentación continua para mejorar la calidad y la efectividad de
+                        nuestros
+                        proyectos.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="aprendizajes-envo" class="container-fluid my-5">
+            <h3>Aprendizajes</h3>
+            <p>Uno de los aprendizajes más significativos de este proyecto fue la importancia del trabajo en equipo. La
+                coordinación entre las diseñadoras y la comunicación efectiva con el equipo de desarrollo fueron
+                fundamentales. Este proyecto nos ayudó a madurar en nuestro proceso de UX dentro de la empresa al
+                desarrollar una metodología organizada y una documentación sólida. También nos permitió comprender los
+                aspectos técnicos del desarrollo y cómo estos influyen en el proceso de diseño. La colaboración entre
+                ambos mundos fue clave para el éxito de este proyecto.
+                Personalmente, la experiencia en Envo me brindó la oportunidad de crecer como líder en UX. Tuve la
+                responsabilidad de guiar a un equipo de diseño que recién estaba incursionando en el mundo tecnológico.
+                Además, tuve que defender nuestras decisiones ante un equipo de stakeholders que se mostraban escépticos
+                respecto a nuestras metodologías. Esto me permitió posicionarme dentro del equipo como una líder nata,
+                preocupada por el bienestar de mi equipo y el éxito del proyecto.
+                .</p>
+        </section>
+    </main>
+
+    <footer id="contact" class="py-5 w-100" style="background-color: gold;">
+        <div class="container-fluid text-center">
+            <h4>Trabajemos juntos!</h4>
             <p>Estoy disponible para colaborar en proyectos de diseño y experiencias digitales.</p>
-            <p>Email: xxxxxxxx</p>
-            <p>LinkedIn: xxxxxxxx</p>
+            <p><a href="mailto:email@email.com">email@email.com</a></p>
+            <p><a href="https://www.linkedin.com">Linkedin</a></p>
         </div>
-    </section>
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            window.addEventListener("scroll", function() {
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener("scroll", function () {
                 let navbar = document.getElementById("navbar");
                 if (window.scrollY > 50) {
                     navbar.classList.add("scrolled");
