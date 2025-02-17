@@ -68,4 +68,31 @@
   opacity: 0.6;
 }
 
+.h1--index {
+  background: linear-gradient(45deg, #e43060, #fcca15);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+@media (max-width: 768px) {
+  .h1--index {
+    font-size: 3rem;
+  }
+}
+.h1--projects {
+  background: linear-gradient(45deg, #068bbb, #34d399);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+@media (max-width: 768px) {
+  .h1--projects {
+    font-size: 3rem;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -94,20 +94,18 @@
     margin: 0 auto;
     padding: 60px 0;
 }
-
+/*
 .experience-section h2 {
-    background: linear-gradient(0deg, #6BC0BD, #d872bb);
-    background-clip: text;
-    /* Propiedad estándar */
+
     -webkit-background-clip: text;
-    /* Para compatibilidad con navegadores WebKit */
+
     -webkit-text-fill-color: transparent;
     color: transparent;
-    /* Asegura que en navegadores modernos el texto sea transparente */
+    
     font-size: 3rem;
     font-weight: bold;
 
-}
+}*/
 
 .experience-description {
     position: relative;

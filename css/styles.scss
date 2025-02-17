@@ -15,14 +15,14 @@ $btn_focus_outline: rgba(11, 11, 172, 0.4); // Color del outline en focus
 $btn_disabled_bg: #d6d6d6; // Color para botones deshabilitados
 $btn_disabled_text: #a0a0a0;
 
-// 🎯 Mixin reutilizable para los botones
+//  Mixin reutilizable para los botones
 @mixin button-style($bg-color, $border-color, $text-color, $hover-bg, $hover-border) {
     background-color: $bg-color !important;
     border-color: $border-color !important;
     color: $text-color;
     padding: 10px 20px;
     font-size: 16px;
-    border-radius: 9999px; // Píldora
+    border-radius: 9999px; // botón tipo pildora
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
@@ -65,3 +65,33 @@ $btn_disabled_text: #a0a0a0;
 .btn--secondary {
     @include button-style($secondary_color, $secondary_color, $btn_secondary_text_color, $btn_secondary_hover_bg, $btn_secondary_hover_border);
 }
+
+
+//mixin para h1
+
+@mixin gradient-text($gradient) {
+    background: $gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+
+.h1--index {
+    @include gradient-text(linear-gradient(45deg, #e43060, #fcca15));
+}
+
+@media (max-width: 768px) { 
+    .h1--index {
+        font-size: 3rem;
+    }    }
+
+.h1--projects {
+    @include gradient-text(linear-gradient(45deg, #068bbb, #34d399));
+}
+
+@media (max-width: 768px) { 
+    .h1--projects {
+        font-size: 3rem;
+    }    }
