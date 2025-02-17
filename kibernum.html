@@ -26,13 +26,18 @@
 </head>
 
 <body>
+
+    <!-- Skip link para acesibilidad-->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+
     <div class="background-blobs">
         <div class="blob"></div>
         <div class="blob"></div>
         <div class="blob"></div>
     </div>
 
-    <nav class="navbar navbar-expand-lg" id="navbar">
+   <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/Logo_de_caro.png" alt="Logo">
@@ -43,22 +48,27 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" 
+                           href="#" 
+                           id="portfolioDropdown" 
+                           role="button" 
+                           data-bs-toggle="dropdown" 
+                           aria-haspopup="true" 
+                           aria-expanded="false"
+                           aria-controls="portfolioMenu">
                             Portafolio
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                        <ul class="dropdown-menu" id="portfolioMenu" aria-labelledby="portfolioDropdown">
                             <li><a class="dropdown-item" href="envo.html">Envo Chat</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.html#services">Servicios</a></li>
+                            <li><a class="dropdown-item" href="kibernum.html">Kibernum</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <main>
 
         <header class="container mt-5 section-kib">
