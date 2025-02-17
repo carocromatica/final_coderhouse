@@ -11,33 +11,35 @@ $btn_hover_border: color.adjust($primary_color, $lightness: -15%);
 $btn_secondary_hover_bg: color.adjust($secondary_color, $lightness: -10%);
 $btn_secondary_hover_border: color.adjust($secondary_color, $lightness: -15%);
 
-.btn {
-    border-radius: 9999px; //  Le da forma de píldora
+// Mixin reutilizable para los botones
+@mixin button-style($bg-color, $border-color, $text-color, $hover-bg, $hover-border) {
+    background-color: $bg-color !important;
+    border-color: $border-color !important;
+    color: $text-color;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 9999px; 
+    text-align: center;
+    cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
-    border: none; 
-    padding:0.7rem;
+    border: none;
 
-    &--primary {
-        background-color: $primary_color !important;
-        border-color: $primary_color !important;
-        color: $btn_text_color;
-
-        &:hover {
-            background-color: $btn_hover_bg !important;
-            border-color: $btn_hover_border !important;
-            color: $btn_text_color;
-        }
+    &:hover {
+        background-color: $hover-bg !important;
+        border-color: $hover-border !important;
+        color: $text-color;
     }
+}
 
-    &--secondary {
-        background-color: $secondary_color !important;
-        border-color: $secondary_color !important;
-        color: $btn_secondary_text_color;
+// Estilos base para el botón
+.btn {
+    display: inline-block;
+}
 
-        &:hover {
-            background-color: $btn_secondary_hover_bg !important;
-            border-color: $btn_secondary_hover_border !important;
-            color: $btn_secondary_text_color;
-        }
-    }
+.btn--primary {
+    @include button-style($primary_color, $primary_color, $btn_text_color, $btn_hover_bg, $btn_hover_border);
+}
+
+.btn--secondary {
+    @include button-style($secondary_color, $secondary_color, $btn_secondary_text_color, $btn_secondary_hover_bg, $btn_secondary_hover_border);
 }
