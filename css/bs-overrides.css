@@ -64,8 +64,12 @@ p {
     line-height: 2rem;
 }
 section {
-    scroll-margin-top: 80px; /* Ajusta según la altura del navbar */
+    scroll-margin-top: 100px; /* Ajusta según la altura del navbar */
     width: 70%!important;}
+
+   main {
+        scroll-margin-top: 100px; /* Ajusta según la altura del navbar */
+    }
 
 @media (max-width: 768px) { 
     section {
@@ -80,3 +84,7 @@ section {
         header {
             width: 100% !important; 
         }    }
+
+        footer{
+            background-color: gold;
+        }

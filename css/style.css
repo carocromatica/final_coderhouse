@@ -68,13 +68,11 @@
     padding: 20px;
     text-align: center;
 }
-
+/* experience va en index.html*/
 .experience-section {
     max-width: 70%;
     margin: 0 auto;
     padding: 60px 0;
- 
-  
 }
 
 .experience-section h2{
@@ -88,10 +86,6 @@
   
 }
     
-
-
-
-
 .experience-description {
     position: relative;
     padding: 50px;
