@@ -1,0 +1,18 @@
+@use "sass:color";
+
+$primary_color: #ffc219;
+$secondary_color: #068bbb;
+$btn_text_color: #102736;
+$btn_hover_bg: color.adjust($primary_color, $lightness: -10%);
+$btn_hover_border: color.adjust($primary_color, $lightness: -15%);
+
+.btn-primary {
+    background-color: $primary_color !important;
+    border-color: $primary_color !important;
+    color: $btn_text_color;
+}
+.btn-primary:hover {
+    background-color: $btn_hover_bg !important;
+    border-color: $btn_hover_border !important;
+    color: $btn_text_color;
+}
