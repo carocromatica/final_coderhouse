@@ -1,13 +1,28 @@
-.btn-primary {
+.btn {
+  border-radius: 9999px;
+  transition: background-color 0.3s, border-color 0.3s;
+  border: none;
+  padding: 0.7rem;
+}
+.btn--primary {
   background-color: #ffc219 !important;
   border-color: #ffc219 !important;
   color: #102736;
 }
-
-.btn-primary:hover {
+.btn--primary:hover {
   background-color: rgb(229, 168.2652173913, 0) !important;
   border-color: rgb(203.5, 149.5282608696, 0) !important;
   color: #102736;
+}
+.btn--secondary {
+  background-color: #068bbb !important;
+  border-color: #068bbb !important;
+  color: #ffffff;
+}
+.btn--secondary:hover {
+  background-color: rgb(4.414507772, 102.2694300518, 137.585492228) !important;
+  border-color: rgb(3.621761658, 83.9041450777, 112.878238342) !important;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=styles.css.map */
