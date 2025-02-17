@@ -26,6 +26,10 @@
 </head>
 
 <body>
+
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+
     <div class="background-blobs">
         <div class="blob"></div>
         <div class="blob"></div>
@@ -43,11 +47,17 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" 
+                           href="#" 
+                           id="portfolioDropdown" 
+                           role="button" 
+                           data-bs-toggle="dropdown" 
+                           aria-haspopup="true" 
+                           aria-expanded="false"
+                           aria-controls="portfolioMenu">
                             Portafolio
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                        <ul class="dropdown-menu" id="portfolioMenu" aria-labelledby="portfolioDropdown">
                             <li><a class="dropdown-item" href="envo.html">Envo Chat</a></li>
                             <li><a class="dropdown-item" href="kibernum.html">Kibernum</a></li>
                         </ul>
@@ -58,9 +68,10 @@
             </div>
         </div>
     </nav>
+    
 
 
-    <main>
+    <main id="main-content">
         <header id="header-envo" class="container mt-5">
             <div class="row">
                 <div class="col-md-5">
@@ -121,7 +132,7 @@
             </div>
         </section>
         <section id="portfolio" class="container py-5">
-            <h2 class="section-title text-center">Explora mi trabajo</h2>
+            <h3 class="section-title text-center">Explora mi trabajo</h3>
             <div class="row">
                 <div class="col-md-6 mb-4">
                     <div class="card">
