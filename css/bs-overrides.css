@@ -14,10 +14,12 @@ body {
 .btn-primary {
     background-color: var(--bs-primary) !important;
     border-color: var(--bs-primary) !important;
+    color: #102736;
 }
 .btn-primary:hover {
     background-color: #e0a800 !important; /* Un tono más oscuro en hover */
     border-color: #d39e00 !important;
+    color: #102736;
 }
 
 .card{
@@ -86,5 +88,5 @@ section {
         }    }
 
         footer{
-            background-color: gold;
+            background-color: #F4C430;
         }
