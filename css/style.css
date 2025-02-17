@@ -63,6 +63,12 @@
     background-image: url('assets/fondo_header.png'); background-size: contain; background-repeat: no-repeat;
 }
 
+.hero-bg-project {
+
+    background-image: url('assets/Vector 1.svg'); background-size: contain; background-repeat: no-repeat;"
+}
+
+
 .section-title {
     font-weight: bold;
 }
