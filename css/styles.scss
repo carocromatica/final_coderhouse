@@ -1,5 +1,9 @@
 @use "sass:color";
 
+// Variables globales
+$font-family: "Poppins", serif;
+$body-color: #102736;
+
 $primary_color: #ffc219;
 $secondary_color: #068bbb;
 $btn_text_color: #102736;
@@ -14,6 +18,13 @@ $btn_secondary_hover_border: color.adjust($secondary_color, $lightness: -15%);
 $btn_focus_outline: rgba(11, 11, 172, 0.4); // Color del outline en focus
 $btn_disabled_bg: #d6d6d6; // Color para botones deshabilitados
 $btn_disabled_text: #a0a0a0;
+
+
+body {
+    font-family: $font-family;
+    font-optical-sizing: auto;
+    color: $body-color;
+}
 
 //  Mixin reutilizable para los botones
 @mixin button-style($bg-color, $border-color, $text-color, $hover-bg, $hover-border) {
@@ -95,3 +106,5 @@ $btn_disabled_text: #a0a0a0;
     .h1--projects {
         font-size: 3rem;
     }    }
+
+
