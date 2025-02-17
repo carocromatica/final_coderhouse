@@ -37,7 +37,7 @@
         <div class="blob"></div>
     </div>
 
-   <nav class="navbar navbar-expand-lg" id="navbar">
+    <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/Logo_de_caro.png" alt="Logo">
@@ -48,14 +48,9 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" 
-                           href="#" 
-                           id="portfolioDropdown" 
-                           role="button" 
-                           data-bs-toggle="dropdown" 
-                           aria-haspopup="true" 
-                           aria-expanded="false"
-                           aria-controls="portfolioMenu">
+                        <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            aria-controls="portfolioMenu">
                             Portafolio
                         </a>
                         <ul class="dropdown-menu" id="portfolioMenu" aria-labelledby="portfolioDropdown">
@@ -77,7 +72,7 @@
             <div><img src="assets/kibernum.png" alt="Portada kibernum" class="img-fluid"></div>
         </header>
 
-      
+
         <section class="container mt-5" id="contexto-kibernum">
             <h3>Contexto</h3>
             <p>En 2020, llevamos a cabo una revisión completa del sitio web de Kibernum. La iniciativa surgió en
@@ -95,23 +90,30 @@
                         superficiales de apariencia, sino que abarcó
                         transformaciones profundas en términos de contenido y plataforma. Para iniciar, llevamos a cabo
                         evaluaciones heurísticas exhaustivas del sitio existente para conocer el estado del sitio.
-                        Además creamos mapas de empatía detallados para comprender a fondo a nuestros usuarios y clientes.
+                        Además creamos mapas de empatía detallados para comprender a fondo a nuestros usuarios y
+                        clientes.
                         Realizamos un análisis comparativo con la competencia a través de benchmarks, examinamos
-                        nuestras fortalezas, debilidades, oportunidades y amenazas (FODA) y organizamos reuniones enriquecedoras
-                        con stakeholders clave. También recopilamos datos a través de encuestas dirigidas a profesionales de
+                        nuestras fortalezas, debilidades, oportunidades y amenazas (FODA) y organizamos reuniones
+                        enriquecedoras
+                        con stakeholders clave. También recopilamos datos a través de encuestas dirigidas a
+                        profesionales de
                         TI para entender su percepción sobre los contenidos actuales del sitio.
                         Posteriormente, desarrollamos una estructura de contenidos sólida y coherente, lo que implicó la
                         creación de prototipos tanto de baja como de alta fidelidad para visualizar y refinar nuestras
-                        ideas. Finalmente, llevamos a cabo la implementación en la plataforma WordPress, asegurándonos de que
-                        el diseño y la funcionalidad estuvieran perfectamente alineados con las expectativas y necesidades de
+                        ideas. Finalmente, llevamos a cabo la implementación en la plataforma WordPress, asegurándonos
+                        de que
+                        el diseño y la funcionalidad estuvieran perfectamente alineados con las expectativas y
+                        necesidades de
                         nuestros usuarios y stakeholders..</p>
                 </div>
                 <div class="col-md-6">
                     <div class="bg-light">
-                        <img src="assets/proceso-kibernum1.png" alt="Ejecutivas de Kibernum trabajando en workshop de colaboración" class="img-fluid">
+                        <img src="assets/proceso-kibernum1.png"
+                            alt="Ejecutivas de Kibernum trabajando en workshop de colaboración" class="img-fluid">
                     </div>
                     <div class="bg-light mt-5">
-                        <img src="assets/proceso-kibernum2.png" alt="Mapa de empatía trabajado en conjunto con ejecutivas" class="img-fluid">
+                        <img src="assets/proceso-kibernum2.png"
+                            alt="Mapa de empatía trabajado en conjunto con ejecutivas" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -143,13 +145,32 @@
             <h3>Antes y después</h3>
             <div class="row">
                 <div class="col-md-6">
-                    <div class="bg-light" style="height: 200px;"></div>
+                    <div>
+                        <img src="assets/antes.png" alt="Antes" class="img-fluid clickable-img" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" onclick="openModal('assets/antes.png')">
+                    </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="bg-light" style="height: 200px;"></div>
+                    <div>
+                        <img src="assets/despues.png" alt="Después" class="img-fluid clickable-img"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            onclick="openModal('assets/despues.png')">
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- Modal de Bootstrap -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="modal-body text-center">
+                        <img id="modalImage" src="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <section class="container mt-5 mb-5">
             <h3>Aprendizajes</h3>
@@ -206,6 +227,15 @@
             });
         });
     </script>
+
+    <script>
+        function openModal(imageSrc) {
+            document.getElementById('modalImage').src = imageSrc;
+        }
+    </script>
+
+
+
 
 </body>
 
