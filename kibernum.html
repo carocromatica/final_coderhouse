@@ -146,31 +146,24 @@
             <div class="row">
                 <div class="col-md-6">
                     <div>
-                        <img src="assets/antes.png" alt="Antes" class="img-fluid clickable-img" data-bs-toggle="modal"
-                            data-bs-target="#imageModal" onclick="openModal('assets/antes.png')">
+                        <img src="assets/antes.png" alt="Antes" class="img-fluid clickable-img" onclick="showOverlay('assets/antes.png')">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div>
-                        <img src="assets/despues.png" alt="Después" class="img-fluid clickable-img"
-                            data-bs-toggle="modal" data-bs-target="#imageModal"
-                            onclick="openModal('assets/despues.png')">
+                        <img src="assets/despues.png" alt="Después" class="img-fluid clickable-img" onclick="showOverlay('assets/despues.png')">
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Modal de Bootstrap -->
-        <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content bg-transparent border-0">
-                    <div class="modal-body text-center">
-                        <img id="modalImage" src="" class="img-fluid">
-                    </div>
-                </div>
-            </div>
+        
+        <!-- Overlay personalizado -->
+        <div id="imageOverlay" class="overlay" onclick="hideOverlay()">
+            <img id="overlayImage" src="" class="overlay-img" onclick="toggleZoom(event)">
         </div>
+        
 
+     
 
         <section class="container mt-5 mb-5">
             <h3>Aprendizajes</h3>
@@ -228,12 +221,25 @@
         });
     </script>
 
-    <script>
-        function openModal(imageSrc) {
-            document.getElementById('modalImage').src = imageSrc;
-        }
+<script>
+    function showOverlay(imageSrc) {
+        document.getElementById('overlayImage').src = imageSrc;
+        document.getElementById('imageOverlay').classList.add('active');
+    }
+    
+    function hideOverlay() {
+        let img = document.getElementById('overlayImage');
+        img.classList.remove('zoomed'); // Restablecer zoom al cerrar
+        document.getElementById('imageOverlay').classList.remove('active');
+    }
+    
+    function toggleZoom(event) {
+        event.stopPropagation(); // Evita que el clic en el overlay lo cierre
+        let img = event.target;
+        img.classList.toggle('zoomed');
+    }
     </script>
-
+    
 
 
 
