@@ -11,27 +11,49 @@ $btn_hover_border: color.adjust($primary_color, $lightness: -15%);
 $btn_secondary_hover_bg: color.adjust($secondary_color, $lightness: -10%);
 $btn_secondary_hover_border: color.adjust($secondary_color, $lightness: -15%);
 
-// Mixin reutilizable para los botones
+$btn_focus_outline: rgba(11, 11, 172, 0.4); // Color del outline en focus
+$btn_disabled_bg: #d6d6d6; // Color para botones deshabilitados
+$btn_disabled_text: #a0a0a0;
+
+// 🎯 Mixin reutilizable para los botones
 @mixin button-style($bg-color, $border-color, $text-color, $hover-bg, $hover-border) {
     background-color: $bg-color !important;
     border-color: $border-color !important;
     color: $text-color;
-    padding: 10px 30px;
+    padding: 10px 20px;
     font-size: 16px;
-    border-radius: 9999px; 
+    border-radius: 9999px; // Píldora
     text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s, border-color 0.3s;
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
     border: none;
+    outline: none;
 
     &:hover {
         background-color: $hover-bg !important;
         border-color: $hover-border !important;
         color: $text-color;
     }
+
+    &:focus {
+        box-shadow: 0 0 0 3px $btn_focus_outline; // Resalta el botón al enfocarse
+    }
+
+    &:active {
+        background-color: color.adjust($bg-color, $lightness: -15%) !important;
+        border-color: color.adjust($border-color, $lightness: -20%) !important;
+    }
+
+    &:disabled {
+        background-color: $btn_disabled_bg !important;
+        border-color: $btn_disabled_bg !important;
+        color: $btn_disabled_text !important;
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
 }
 
-// Estilos base para el botón
+
 .btn {
     display: inline-block;
 }
