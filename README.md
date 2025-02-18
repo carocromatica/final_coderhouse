@@ -27,7 +27,6 @@ Este repositorio contiene la estructura inicial del proyecto, incluyendo los arc
 - Se han creado las estructuras HTML básicas.
 - Se ha organizado el repositorio en carpetas para facilitar la gestión de estilos y recursos.
 - La carpeta `css` ahora solo contiene archivos SASS y el CSS generado, eliminando los CSS antiguos innecesarios.
-- Falta integrar estilos y revisar la accesibilidad y usabilidad de la interfaz.
 
 ## Próximos Pasos
 - Agregar librería de animaciones.
@@ -39,4 +38,4 @@ Este repositorio contiene la estructura inicial del proyecto, incluyendo los arc
 Se extraña el chat de entrega de coder :C.
 
 ---
-_Última actualización: [lun, 17 de febrero]_
+_Última actualización: [mar, 18 de febrero]_
