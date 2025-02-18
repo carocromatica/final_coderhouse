@@ -1,8 +1,8 @@
 
-:root {
-    --bs-primary: #ffc219; /* Amarillo */
-    --bs-primary-rgb: 255, 194, 25; /* Valor RGB para efectos */
-}
+/* :root {
+ 
+    --bs-primary-rgb: 255, 194, 25; 
+*/
 
 /*
 body {
@@ -26,24 +26,24 @@ body {
 }
 */
 
-
+/*
 .card{
     border: 0px;
 }
-h1{
+/* h1{
     font-size: 5rem;
     background: linear-gradient(45deg, #e43060, #fcca15);
-    background-clip: text;  /* Propiedad estándar */
-    -webkit-background-clip: text;  /* Para compatibilidad con navegadores WebKit */
+    background-clip: text; 
+    -webkit-background-clip: text;  
     -webkit-text-fill-color: transparent;
-    color: transparent; /* Asegura que en navegadores modernos el texto sea transparente */
+    color: transparent; 
     font-weight: bold;
 }
 
 @media (max-width: 768px) { 
     h1 {
         font-size: 3rem;
-    }    }
+    }    } */
 
 h3{ background: linear-gradient(45deg, #e43060, #2194cd);
     background-clip: text;  /* Propiedad estándar */
@@ -66,16 +66,16 @@ h3{ background: linear-gradient(45deg, #e43060, #2194cd);
         
     }
     
-p {
+/* p {
     font-size: 1rem;
     line-height: 2rem;
 }
 section {
-    scroll-margin-top: 100px; /* Ajusta según la altura del navbar */
+    scroll-margin-top: 100px; /* Ajusta según la altura del navbar 
     width: 70%!important;}
 
    main {
-        scroll-margin-top: 100px; /* Ajusta según la altura del navbar */
+        scroll-margin-top: 100px; /* Ajusta según la altura del navbar 
     }
 
 @media (max-width: 768px) { 
@@ -84,7 +84,7 @@ section {
     }    }
 
     header {
-        scroll-margin-top: 80px; /* Ajusta según la altura del navbar */
+        scroll-margin-top: 80px; /* Ajusta según la altura del navbar 
         width: 70%!important;}
     
     @media (max-width: 768px) { 
@@ -94,4 +94,4 @@ section {
 
         footer{
             background-color: #F4C430;
-        }
+        } */
