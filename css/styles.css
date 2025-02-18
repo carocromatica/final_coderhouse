@@ -109,7 +109,7 @@ body {
     font-size: 3rem;
   }
 }
-.h2--index {
+h2 {
   background: linear-gradient(45deg, #e43060, #13dcea);
   background-clip: text;
   -webkit-background-clip: text;
@@ -121,11 +121,11 @@ body {
 }
 
 @media (max-width: 768px) {
-  .h2--index {
+  h2 {
     font-size: 2rem;
   }
 }
-.h3--index {
+h3 {
   background: linear-gradient(45deg, #e43060, #13dcea);
   background-clip: text;
   -webkit-background-clip: text;
@@ -137,7 +137,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .h3--index {
+  h3 {
     font-size: 2rem;
   }
 }

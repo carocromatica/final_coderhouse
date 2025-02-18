@@ -117,31 +117,31 @@ body {
 }
 
 
-.h2--index {
+h2{
     @include gradient-text(linear-gradient(45deg, #e43060, #13dcea));
     font-size: 2rem;
     font-weight: normal;
 }
 
 @media (max-width: 768px) {
-    .h2--index {
+    h2 {
         font-size: 2rem;
     }
 }
 
-.h3--index {
+h3 {
     @include gradient-text(linear-gradient(45deg, #e43060, #13dcea));
     font-size: 3rem;
     font-weight: bolder;
 }
 
 @media (max-width: 768px) {
-    .h3--index {
+    h3 {
         font-size: 2rem;
     }
 }
 
-
+// css clásico
 
 p {
     font-size: 1rem;
