@@ -14,9 +14,9 @@ Este repositorio contiene la estructura inicial del proyecto, incluyendo los arc
 │   ├── _hero-section.scss
 │   ├── _navbar.scss
 │   ├── _variables.scss
-│   ├── styles.scss  # Archivo principal de SASS
-│   ├── styles.css   # Archivo CSS compilado
-│   ├── styles.css.map # Mapa de fuente para depuración
+│   ├── main.scss  # Archivo principal de SASS
+│   ├── main.css   # Archivo CSS compilado
+│   ├── main.css.map # Mapa de fuente para depuración
 ├── 📂 assets       # Recursos como imágenes, íconos y otros elementos gráficos
 ├── 📄 index.html   # Archivo principal HTML
 ├── 📄 [otros archivos HTML]
