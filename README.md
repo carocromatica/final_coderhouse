@@ -1,4 +1,4 @@
-# Proyecto [Nombre del Proyecto]
+# Proyecto Portafolio de Caro
 
 ## Descripción
 Este repositorio contiene la estructura inicial del proyecto, incluyendo los archivos HTML y las carpetas necesarias para el desarrollo de estilos y recursos multimedia.
