@@ -1,0 +1,49 @@
+@use "variables" as *;
+@use "sass:color";
+
+// hero section index.html
+.hero {
+    padding: 60px 0;
+}
+
+.hero-image {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-image::before {
+    content: "";
+    position: absolute;
+    width: 50vh;
+    height: 50vh;
+    background: linear-gradient(135deg, #ffc219, #e8e241);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.hero-image img {
+    max-width: 80%;
+    height: auto;
+    z-index: 1;
+    position: relative;
+
+}
+
+.hero-bg {
+
+    background-image: url('../assets/fondo_header.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hero-bg-project {
+
+    background-image:url('../assets/Vector 1.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+
+}

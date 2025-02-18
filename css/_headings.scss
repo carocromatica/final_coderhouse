@@ -1,0 +1,63 @@
+//mixin para h1
+
+@mixin gradient-text($gradient) {
+    background: $gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: bold;
+}
+
+
+.h1--index {
+    @include gradient-text(linear-gradient(45deg, #e43060, #fcca15));
+    font-size: 5rem;
+}
+
+@media (max-width: 768px) { 
+    .h1--index {
+        font-size: 3rem;
+    }    }
+
+.h1--projects {
+    font-size: 4rem;
+    @include gradient-text(linear-gradient(45deg, #068bbb, #34d399));
+}
+
+@media (max-width: 768px) {
+    .h1--projects {
+        font-size: 3rem;
+    }
+}
+
+
+h2{
+    @include gradient-text(linear-gradient(45deg, #e43060, #13dcea));
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+
+h3 {
+    background: linear-gradient(45deg, #e43060, #13dcea);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: bold;
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 2rem;
+    }
+  }

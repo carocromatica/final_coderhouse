@@ -1,10 +1,4 @@
 @charset "UTF-8";
-body {
-  font-family: "Poppins", serif;
-  font-optical-sizing: auto;
-  color: #102736;
-}
-
 .btn {
   display: inline-block;
 }
@@ -75,10 +69,6 @@ body {
   opacity: 0.6;
 }
 
-.card {
-  border: 0px;
-}
-
 .h1--index {
   background: linear-gradient(45deg, #e43060, #fcca15);
   background-clip: text;
@@ -141,57 +131,6 @@ h3 {
     font-size: 2rem;
   }
 }
-p {
-  font-size: 1rem;
-  line-height: 2rem;
-}
-
-section {
-  scroll-margin-top: 100px; /* Ajusta según la altura del navbar */
-  width: 70% !important;
-}
-
-main {
-  scroll-margin-top: 100px; /* Ajusta según la altura del navbar */
-}
-
-@media (max-width: 768px) {
-  section {
-    width: 100% !important;
-  }
-}
-header {
-  scroll-margin-top: 80px; /* Ajusta según la altura del navbar */
-  width: 70% !important;
-}
-
-@media (max-width: 768px) {
-  header {
-    width: 100% !important;
-  }
-}
-footer {
-  background-color: #F4C430;
-}
-
-.navbar {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  transition: background 0.3s ease-in-out;
-}
-
-.navbar.scrolled {
-  background: white !important;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-brand img {
-  height: 50px;
-  width: auto;
-}
-
 .hero {
   padding: 60px 0;
 }
@@ -231,6 +170,63 @@ footer {
   background-image: url("../assets/Vector 1.svg");
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  background: white !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  height: 50px;
+  width: auto;
+}
+
+body {
+  font-family: "Poppins", serif;
+  font-optical-sizing: auto;
+  color: #102736;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+section {
+  scroll-margin-top: 100px; /* Ajusta según la altura del navbar */
+  width: 70% !important;
+}
+
+main {
+  scroll-margin-top: 100px; /* Ajusta según la altura del navbar */
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 100% !important;
+  }
+}
+header {
+  scroll-margin-top: 80px; /* Ajusta según la altura del navbar */
+  width: 70% !important;
+}
+
+@media (max-width: 768px) {
+  header {
+    width: 100% !important;
+  }
+}
+footer {
+  background-color: #F4C430;
 }
 
 .experience-section {
