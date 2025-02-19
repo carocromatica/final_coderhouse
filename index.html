@@ -18,6 +18,8 @@
     <!-- css -->
     <link rel="stylesheet" href="css/main.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 
 </head>
@@ -69,7 +71,7 @@
 
 
     <main id="main-content">
-        <header id="header-envo" class="container mt-5">
+        <header id="headerIndex" class="container mt-5" data-aos="zoom-in">
             <div class="row">
                 <div class="col-md-5">
                     <div class="hero-bg">
@@ -93,7 +95,7 @@
             </div>
         </header>
 
-        <section class="container experience-section">
+        <section class="container experience-section" data-aos="fade-right"> 
             <div class="row">
                 <div class="col-md-5 col-sm-12 d-flex align-items-center">
                     <h3 class="text-center h3--index">Experiencias que conectan</h3>
@@ -105,7 +107,7 @@
                 </div>
             </div>
         </section>
-        <section class="container services-section" id="services">
+        <section class="container services-section" id="services" data-aos="fade-left" >
             <h3 class="text-center h3--index">Servicios de diseño con propósito</h3>
             <p class="text-center">Mi trabajo abarca cada etapa del proceso de diseño, asegurando que las soluciones
                 digitales sean funcionales, atractivas y estén alineadas con las necesidades de usuarios y equipos.</p>
@@ -126,7 +128,7 @@
                     discovery, diseño de canvas y otras dinámicas para alinear equipos y objetivos.</div>
             </div>
         </section>
-        <section id="portfolio" class="container py-5">
+        <section id="portfolio" class="container py-5" data-aos="fade-right">
             <h3 class="section-title text-center h3--index">Explora mi trabajo</h3>
             <div class="row">
                 <div class="col-md-6 mb-4">
@@ -197,6 +199,14 @@
             });
         });
     </script>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<script>
+    AOS.init();
+  </script>
 
 </body>
 
