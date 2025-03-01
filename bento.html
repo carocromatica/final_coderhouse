@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+        <!-- Optimización de fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&display=swap">
+    
+        <!-- CSS personalizados -->
+    
+        <link rel="stylesheet" href="css/main.css">
+
+        <style>
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 16px;
+    padding: 20px 0;
+}
+
+.bento-item {
+    background: #f5f5f5;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bento-item:hover {
+    transform: scale(1.05);
+}
+
+/* Hacer que "Research" y "UI" ocupen más espacio */
+.bento-large {
+    grid-column: span 2;
+}
+
+/* Ajustes para responsive */
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: 1fr; /* En móvil, todas ocupan 1 columna */
+    }
+    .bento-large {
+        grid-column: span 1; /* En móvil, todas son del mismo tamaño */
+    }
+}
+
+        </style>
+    </head>
+
+
+</head>
+<body>
+
+    <section class="container services-section" id="services" data-aos="fade-left" data-aos-duration="1000">
+        <h3 class="text-center h3--index">Servicios de diseño con propósito</h3>
+        <p class="text-center">Mi trabajo abarca cada etapa del proceso de diseño, asegurando que las soluciones
+            digitales sean funcionales, atractivas y estén alineadas con las necesidades de usuarios y equipos.</p>
+    
+        <div class="bento-grid">
+            <div class="bento-item bento-large">
+                <strong>Research:</strong> Comprendo a los usuarios mediante metodologías cualitativas y cuantitativas.
+            </div>
+            <div class="bento-item">
+                <strong>Arquitectura de Información:</strong> Organizo y estructuro el contenido para garantizar claridad y navegabilidad.
+            </div>
+            <div class="bento-item bento-large">
+                <strong>Diseño de Interfaces (UI):</strong> Creo interfaces visuales consistentes, accesibles y atractivas.
+            </div>
+            <div class="bento-item">
+                <strong>Service Design:</strong> Diseños integrales que conectan servicios y puntos de contacto para experiencias fluidas.
+            </div>
+            <div class="bento-item">
+                <strong>Design Ops:</strong> Optimización de procesos y herramientas de diseño para mejorar la colaboración y la eficiencia.
+            </div>
+            <div class="bento-item">
+                <strong>Workshops:</strong> Facilito sesiones de co-creación como product discovery, diseño de canvas y otras dinámicas para alinear equipos y objetivos.
+            </div>
+        </div>
+    </section>
+    
+    
+</body>
+</html>
