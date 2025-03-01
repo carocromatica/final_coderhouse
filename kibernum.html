@@ -1,39 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - Caro</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- fonts-->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
     <!-- css -->
-
     <link rel="stylesheet" href="css/main.css">
-
-
 </head>
-
 <body>
-
     <!-- Skip link para acesibilidad-->
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
-
-
     <div class="background-blobs">
         <div class="blob"></div>
         <div class="blob"></div>
         <div class="blob"></div>
     </div>
-
     <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -61,15 +49,12 @@
             </div>
         </div>
     </nav>
-
+    <header class="container mt-5 ">
+        <h1 class="h1--projects">Kibernum.com</h1>
+        <h2>Diseño y desarrollo de sitio web corporativo</h2>
+        <div><img src="assets/kibernum.png" alt="Portada kibernum" class="img-fluid"></div>
+    </header>
     <main id="main-content">
-        <header class="container mt-5 ">
-            <h1 class="h1--projects">Kibernum.com</h1>
-            <h2>Diseño y desarrollo de sitio web corporativo</h2>
-            <div><img src="assets/kibernum.png" alt="Portada kibernum" class="img-fluid"></div>
-        </header>
-
-
         <section class="container mt-5" id="contexto-kibernum">
             <h3>Contexto</h3>
             <p>En 2020, llevamos a cabo una revisión completa del sitio web de Kibernum. La iniciativa surgió en
@@ -78,7 +63,6 @@
                 visual. Además, cabe mencionar que el sitio web anterior no había recibido mantenimiento durante
                 varios años.</p>
         </section>
-
         <section class="container mt-5">
             <h3>Proceso</h3>
             <div class="row">
@@ -115,7 +99,6 @@
                 </div>
             </div>
         </section>
-
         <section class="container mt-5">
             <h3>Resultados</h3>
             <p>El impacto del rediseño del sitio fue significativo y altamente positivo. Las estadísticas revelan una
@@ -137,31 +120,27 @@
                 experiencia del usuario y ha tenido un impacto positivo en la retención de usuarios y en las
                 conversiones, proporcionando así resultados notables para nuestra organización..</p>
         </section>
-
         <section class="container mt-5">
             <h3>Antes y después</h3>
             <div class="row">
                 <div class="col-md-6">
                     <div>
-                        <img src="assets/antes.png" alt="Antes" class="img-fluid clickable-img" onclick="showOverlay('assets/antes.png')">
+                        <img src="assets/antes.png" alt="Antes" class="img-fluid clickable-img"
+                            onclick="showOverlay('assets/antes.png')">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div>
-                        <img src="assets/despues.png" alt="Después" class="img-fluid clickable-img" onclick="showOverlay('assets/despues.png')">
+                        <img src="assets/despues.png" alt="Después" class="img-fluid clickable-img"
+                            onclick="showOverlay('assets/despues.png')">
                     </div>
                 </div>
             </div>
         </section>
-        
         <!-- Overlay personalizado -->
         <div id="imageOverlay" class="overlay" onclick="hideOverlay()">
             <img id="overlayImage" src="" class="overlay-img" onclick="toggleZoom(event)">
         </div>
-        
-
-     
-
         <section class="container mt-5 mb-5">
             <h3>Aprendizajes</h3>
             <p>Este proyecto me brindó la oportunidad de liderar en todas las etapas, desde la concepción hasta la
@@ -173,9 +152,7 @@
                 sino que también proporcionó valiosos datos para continuar refinando y mejorando la experiencia del
                 usuario en el sitio.</p>
         </section>
-
     </main>
-
     <footer id="contact" class="container-fluid">
         <div class="row d-flex justify-content-center">
             <div class="col-md-4 p-2 p-md-5">
@@ -202,9 +179,7 @@
             </div>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             window.addEventListener("scroll", function () {
@@ -217,29 +192,23 @@
             });
         });
     </script>
+    <script>
+        function showOverlay(imageSrc) {
+            document.getElementById('overlayImage').src = imageSrc;
+            document.getElementById('imageOverlay').classList.add('active');
+        }
 
-<script>
-    function showOverlay(imageSrc) {
-        document.getElementById('overlayImage').src = imageSrc;
-        document.getElementById('imageOverlay').classList.add('active');
-    }
-    
-    function hideOverlay() {
-        let img = document.getElementById('overlayImage');
-        img.classList.remove('zoomed'); // Restablecer zoom al cerrar
-        document.getElementById('imageOverlay').classList.remove('active');
-    }
-    
-    function toggleZoom(event) {
-        event.stopPropagation(); // Evita que el clic en el overlay lo cierre
-        let img = event.target;
-        img.classList.toggle('zoomed');
-    }
+        function hideOverlay() {
+            let img = document.getElementById('overlayImage');
+            img.classList.remove('zoomed'); // Restablecer zoom al cerrar
+            document.getElementById('imageOverlay').classList.remove('active');
+        }
+
+        function toggleZoom(event) {
+            event.stopPropagation(); // Evita que el clic en el overlay lo cierre
+            let img = event.target;
+            img.classList.toggle('zoomed');
+        }
     </script>
-    
-
-
-
 </body>
-
 </html>

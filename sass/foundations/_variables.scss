@@ -3,14 +3,14 @@
 $font-family: "Poppins", serif;
 $body-color: #102736;
 
-// 🎯 Colores globales
+//  Colores globales
 $primary_color: #ffc219;
 $secondary_color: #068bbb;
 $body-color: #102736;
 $btn_text_color: #102736;
 $btn_secondary_text_color: #ffffff;
 
-// 🎨 Colores de botones con color.adjust()
+// Colores de botones con color.adjust()
 $btn_hover_bg: color.adjust($primary_color, $lightness: -10%);
 $btn_hover_border: color.adjust($primary_color, $lightness: -15%);
 $btn_secondary_hover_bg: color.adjust($secondary_color, $lightness: -10%);
