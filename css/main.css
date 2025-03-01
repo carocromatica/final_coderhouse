@@ -37,8 +37,8 @@
 }
 
 .btn--secondary {
-  background-color: #068bbb !important;
-  border-color: #068bbb !important;
+  background-color: #037098 !important;
+  border-color: #037098 !important;
   color: #ffffff;
   padding: 10px 20px;
   font-size: 16px;
@@ -50,16 +50,16 @@
   outline: none;
 }
 .btn--secondary:hover {
-  background-color: rgb(4.414507772, 102.2694300518, 137.585492228) !important;
-  border-color: rgb(3.621761658, 83.9041450777, 112.878238342) !important;
+  background-color: rgb(2.0129032258, 75.1483870968, 101.9870967742) !important;
+  border-color: rgb(1.5193548387, 56.7225806452, 76.9806451613) !important;
   color: #ffffff;
 }
 .btn--secondary:focus {
   box-shadow: 0 0 0 3px rgba(11, 11, 172, 0.4);
 }
 .btn--secondary:active {
-  background-color: rgb(3.621761658, 83.9041450777, 112.878238342) !important;
-  border-color: rgb(2.829015544, 65.5388601036, 88.170984456) !important;
+  background-color: rgb(1.5193548387, 56.7225806452, 76.9806451613) !important;
+  border-color: rgb(1.0258064516, 38.2967741935, 51.9741935484) !important;
 }
 .btn--secondary:disabled {
   background-color: #d6d6d6 !important;
