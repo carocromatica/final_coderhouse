@@ -37,8 +37,8 @@
 }
 
 .btn--secondary {
-  background-color: #037098 !important;
-  border-color: #037098 !important;
+  background-color: #035E82 !important;
+  border-color: #035E82 !important;
   color: #ffffff;
   padding: 10px 20px;
   font-size: 16px;
@@ -50,16 +50,16 @@
   outline: none;
 }
 .btn--secondary:hover {
-  background-color: rgb(2.0129032258, 75.1483870968, 101.9870967742) !important;
-  border-color: rgb(1.5193548387, 56.7225806452, 76.9806451613) !important;
+  background-color: rgb(1.8496240602, 57.954887218, 80.1503759398) !important;
+  border-color: rgb(1.2744360902, 39.9323308271, 55.2255639098) !important;
   color: #ffffff;
 }
 .btn--secondary:focus {
   box-shadow: 0 0 0 3px rgba(11, 11, 172, 0.4);
 }
 .btn--secondary:active {
-  background-color: rgb(1.5193548387, 56.7225806452, 76.9806451613) !important;
-  border-color: rgb(1.0258064516, 38.2967741935, 51.9741935484) !important;
+  background-color: rgb(1.2744360902, 39.9323308271, 55.2255639098) !important;
+  border-color: rgb(0.6992481203, 21.9097744361, 30.3007518797) !important;
 }
 .btn--secondary:disabled {
   background-color: #d6d6d6 !important;
@@ -161,11 +161,17 @@ h3 {
 }
 
 .hero-bg {
-  background-image: url("../assets/fondo_header.png");
+  background-image: url("../assets/fondo_header.webp");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
+/* Fallback para navegadores que no soportan WebP */
+@supports not (background-image: url("data:image/webp;base64,UklGRh4AAABXRUJQVlA4TAYAAAAvAAAAEoIAAA==")) {
+  .hero-bg {
+    background-image: url("assets/fondo_header.png");
+  }
+}
 .hero-bg-project {
   background-image: url("../assets/Vector 1.svg");
   background-size: contain;
