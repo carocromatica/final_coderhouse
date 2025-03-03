@@ -34,9 +34,17 @@
 
 .hero-services-bg {
 
-    background-image: url('../assets/fondo_servicios.png');
+    background-image: url('../assets/fondo_servicios.webp');
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+
+/* Fallback para navegadores que no soportan WebP */
+@supports not (background-image: url('data:image/webp;base64,UklGRh4AAABXRUJQVlA4TAYAAAAvAAAAEoIAAA==')) {
+    .hero-services-bg {
+        background-image: url('../assets/fondo_servicios.png');
+    }
 }
 
 
