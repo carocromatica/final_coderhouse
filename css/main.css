@@ -99,6 +99,21 @@
     font-size: 3rem;
   }
 }
+.h1-services {
+  background: linear-gradient(45deg, #e43060, #fcca15);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+  .h1-services {
+    font-size: 2rem;
+  }
+}
 h2 {
   background: linear-gradient(45deg, #e43060, #13dcea);
   background-clip: text;
@@ -112,6 +127,22 @@ h2 {
 
 @media (max-width: 768px) {
   h2 {
+    font-size: 2rem;
+  }
+}
+.h2-services {
+  background: linear-gradient(45deg, #e43060, #13dcea);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: bold;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .h2-services {
     font-size: 2rem;
   }
 }
@@ -131,6 +162,33 @@ h3 {
     font-size: 2rem;
   }
 }
+/* Cards con borde degradado */
+.card-gradient {
+  border-radius: 12px;
+  padding: 20px;
+  background-color: white;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent; /* Para asegurar que el borde tenga espacio */
+  background-clip: padding-box;
+  background: linear-gradient(white, white) padding-box, linear-gradient(to right, #A6C8FF, #FFC107, #ffb3fc) border-box;
+}
+
+.card-gradient-title {
+  font-size: 1rem;
+  font-weight: 600;
+  background: linear-gradient(45deg, #e43060, #0a84e1);
+  background-clip: text;
+}
+
+/* Párrafo dentro de la card con tamaño 1rem */
+.card-gradient-p {
+  font-size: 0.9rem;
+  color: #555; /* Ajusta el color según tu diseño */
+  line-height: 1.5;
+}
+
 .hero {
   padding: 60px 0;
 }
@@ -174,6 +232,47 @@ h3 {
 }
 .hero-bg-project {
   background-image: url("../assets/Vector 1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero-services {
+  padding: 60px 0;
+}
+
+.hero-services-image {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-services-image::before {
+  content: "";
+  position: absolute;
+  width: 50vh;
+  height: 50vh;
+  background: linear-gradient(135deg, #ffc219, #e8e241);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.hero-services-image img {
+  max-width: 80%;
+  height: auto;
+  z-index: 1;
+  position: relative;
+}
+
+.hero-services-bg {
+  background-image: url("../assets/fondo_servicios.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero-services-bg-project {
+  background-image: url("../assets/fondo_servicios.png");
   background-size: contain;
   background-repeat: no-repeat;
 }

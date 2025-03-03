@@ -32,6 +32,16 @@
 }
 
 
+.h1-services {
+    @include gradient-text(linear-gradient(45deg, #e43060, #fcca15));
+    font-size: 3rem;
+}
+
+@media (max-width: 768px) { 
+    .h1-services {
+        font-size: 2rem;
+    }    }
+
 h2{
     @include gradient-text(linear-gradient(45deg, #e43060, #13dcea));
     font-size: 2rem;
@@ -43,6 +53,20 @@ h2{
         font-size: 2rem;
     }
 }
+
+
+.h2-services{
+    @include gradient-text(linear-gradient(45deg, #e43060, #13dcea));
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .h2-services {
+        font-size: 2rem;
+    }
+}
+
 
 
 h3 {

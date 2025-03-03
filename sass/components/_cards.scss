@@ -1,0 +1,32 @@
+@use "../foundations/variables" as *;
+@use "sass:color";
+
+
+/* Cards con borde degradado */
+.card-gradient {
+    border-radius: 12px;
+    padding: 20px;
+    background-color: white;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid transparent; /* Para asegurar que el borde tenga espacio */
+    background-clip: padding-box;
+    background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, #A6C8FF, #FFC107, #ffb3fc) border-box;
+
+}
+
+ .card-gradient-title{
+    font-size: 1rem;
+    font-weight: 600;
+    background: linear-gradient(45deg, #e43060, #0a84e1);
+    background-clip: text;
+}
+
+/* Párrafo dentro de la card con tamaño 1rem */
+.card-gradient-p {
+    font-size: 0.9rem;
+    color: #555; /* Ajusta el color según tu diseño */
+    line-height: 1.5;
+}
