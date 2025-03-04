@@ -19,41 +19,13 @@
         <link rel="stylesheet" href="css/main.css">
 
         <style>
-.bento-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    gap: 16px;
-    padding: 20px 0;
-}
+.bento-research { background: #FDDDEB; } /* Rosa suave */
+.bento-architecture { background: #D4E7F7; } /* Azul celeste */
+.bento-ui { background: #FEF9C3; } /* Amarillo suave */
+.bento-service { background: #D9FBE5; } /* Verde menta claro */
+.bento-ops { background: #FFE9D6; } /* Durazno claro */
+.bento-workshops { background: #EADCF8; } /* Lavanda claro */
 
-.bento-item {
-    background: #f5f5f5;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    font-size: 1rem;
-    transition: transform 0.3s ease-in-out;
-}
-
-.bento-item:hover {
-    transform: scale(1.05);
-}
-
-/* Hacer que "Research" y "UI" ocupen más espacio */
-.bento-large {
-    grid-column: span 2;
-}
-
-/* Ajustes para responsive */
-@media (max-width: 768px) {
-    .bento-grid {
-        grid-template-columns: 1fr; /* En móvil, todas ocupan 1 columna */
-    }
-    .bento-large {
-        grid-column: span 1; /* En móvil, todas son del mismo tamaño */
-    }
-}
 
         </style>
     </head>
@@ -62,32 +34,53 @@
 </head>
 <body>
 
-    <section class="container services-section" id="services" data-aos="fade-left" data-aos-duration="1000">
+    <section class="container services-section" id="services">
         <h3 class="text-center h3--index">Servicios de diseño con propósito</h3>
-        <p class="text-center">Mi trabajo abarca cada etapa del proceso de diseño, asegurando que las soluciones
-            digitales sean funcionales, atractivas y estén alineadas con las necesidades de usuarios y equipos.</p>
+        <p class="text-center">
+            Mi trabajo abarca cada etapa del proceso de diseño, asegurando que las soluciones digitales sean funcionales, 
+            atractivas y estén alineadas con las necesidades de usuarios y equipos.
+        </p>
     
-        <div class="bento-grid">
-            <div class="bento-item bento-large">
-                <strong>Research:</strong> Comprendo a los usuarios mediante metodologías cualitativas y cuantitativas.
+        <div class="row g-3">
+            <!-- Primera fila -->
+            <div class="col-md-6">
+                <div class="p-4 shadow-sm rounded  h-100 bento-research">
+                    <strong>UX Research:</strong> Comprendo a los usuarios mediante metodologías cualitativas y cuantitativas.
+                </div>
             </div>
-            <div class="bento-item">
-                <strong>Arquitectura de Información:</strong> Organizo y estructuro el contenido para garantizar claridad y navegabilidad.
+            <div class="col-md-3">
+                <div class="p-4 shadow-sm rounded  h-100 bento-architecture">
+                    <strong>Arquitectura de Información:</strong> Organizo y estructuro el contenido para garantizar claridad y navegabilidad.
+                </div>
             </div>
-            <div class="bento-item bento-large">
-                <strong>Diseño de Interfaces (UI):</strong> Creo interfaces visuales consistentes, accesibles y atractivas.
+            <div class="col-md-3">
+                <div class="p-4 shadow-sm rounded  h-100 bento-workshops">
+                    <strong>Workshops:</strong> Facilito sesiones de co-creación como product discovery, diseño de canvas y otras dinámicas para alinear equipos y objetivos.
+                </div>
             </div>
-            <div class="bento-item">
-                <strong>Service Design:</strong> Diseños integrales que conectan servicios y puntos de contacto para experiencias fluidas.
+        </div>
+    
+        <div class="row g-3 mt-3">
+            <!-- Segunda fila -->
+            <div class="col-md-3">
+                <div class="p-4 shadow-sm rounded  h-100 bento-service">
+                    <strong>Service Design:</strong> Diseños integrales que conectan servicios y puntos de contacto para experiencias fluidas.
+                </div>
             </div>
-            <div class="bento-item">
-                <strong>Design Ops:</strong> Optimización de procesos y herramientas de diseño para mejorar la colaboración y la eficiencia.
+            <div class="col-md-3">
+                <div class="p-4 shadow-sm rounded  h-100 bento-ops">
+                    <strong>Design Ops:</strong> Optimización de procesos y herramientas de diseño para mejorar la colaboración y la eficiencia.
+                </div>
             </div>
-            <div class="bento-item">
-                <strong>Workshops:</strong> Facilito sesiones de co-creación como product discovery, diseño de canvas y otras dinámicas para alinear equipos y objetivos.
+            <div class="col-md-6">
+                <div class="p-4 shadow-sm rounded  h-100 bento-ui">
+                    <strong>Diseño de Interfaces (UI):</strong> Creo interfaces visuales consistentes, accesibles y atractivas.
+                </div>
             </div>
         </div>
     </section>
+    
+    
     
     
 </body>
