@@ -189,6 +189,24 @@ h3 {
   line-height: 1.5;
 }
 
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  background: white !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  height: 50px;
+  width: auto;
+}
+
 .bento-research {
   background: #EFFBFA;
 } /* Azure (web) */
@@ -301,22 +319,21 @@ h3 {
   background-repeat: no-repeat;
 }
 
-.navbar {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  transition: background 0.3s ease-in-out;
+.footer {
+  background-color: #F4C430;
+  color: #333;
 }
 
-.navbar.scrolled {
-  background: white !important;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+.footer a {
+  text-decoration: none;
 }
 
-.navbar-brand img {
-  height: 50px;
-  width: auto;
+.social-link img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-link:hover img {
+  transform: scale(1.1);
 }
 
 body {
@@ -354,10 +371,6 @@ header {
     width: 100% !important;
   }
 }
-footer {
-  background-color: #F4C430;
-}
-
 .experience-section {
   max-width: 70%;
   margin: 0 auto;

@@ -79,137 +79,47 @@
             </div>
         </div>
     </nav>
-    <header id="headerIndex" class="container mt-5" data-aos="zoom-in" data-aos-duration="800">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="hero-bg">
-                    <div>
-                        <picture>
-                            <source srcset="assets/retrato_de_caro.webp" type="image/webp">
-                            <img src="assets/retrato.png" alt="Retrato de Caro" class="img-fluid">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-7 d-flex align-items-center">
-                <div>
-                    <h1 class="h1--index">Hola! soy Caro</h1>
-                    <h2 class="h2--index">Diseñadora especializada en experiencia e interfaz de usuario UX/UI</h2>
-                    <p>Con más de 6 años trabajando en fábricas de software, conecto negocios y personas usuarias
-                        mediante el diseño.</p>
-                    <div>
-                        <a href="#portfolio" class="btn btn--primary m-3">Explora mi trabajo</a>
-                        <a href="assets/Carolina Torres CV feb 2025 .pdf" class="btn btn--secondary m-3">Descarga mi
-                            CV</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+
     <!--Main-->
     <main id="main-content">
-        <section class="container experience-section" data-aos="fade-right" data-aos-duration="800">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 d-flex align-items-center">
-                    <h3 class="text-center h3--index">Experiencias que conectan</h3>
+        <section id="contacto" class="container my-5 py-5">
+            <div class="row align-items-center">
+                <!-- Columna con imagen -->
+                <div class="col-lg-6 text-center">
+                    <picture>
+                        <source srcset="assets/contacto-ilustracion.webp" type="image/webp">
+                        <img src="assets/contacto-ilustracion.png" alt="Ilustración Contacto" class="img-fluid">
+                    </picture>
                 </div>
-                <div class="col-md-7 col-sm-12 experience-description">
-                    <p>Transformo procesos complejos y análogos en experiencias digitales usables y accesibles,
-                        aplicando investigación, arquitectura de la información y diseño visual en conjunto con
-                        desarrollo, para crear productos con impacto real.</p>
-                </div>
-            </div>
-        </section>
-        <section class="container services-section" id="services"  data-aos="fade-left" data-aos-duration="800">
-            <div>
-                <h3 class="text-center h3--index">Servicios de diseño con propósito</h3>
-                <p class="text-center">
-                    Mi trabajo abarca cada etapa del proceso de diseño, asegurando que las soluciones digitales sean
-                    funcionales,
-                    atractivas y estén alineadas con las necesidades de usuarios y equipos.
-                </p>
-            </div>
-
-
-            <div class="row g-3">
-                <!-- Primera fila -->
-                <div class="col-md-6">
-                    <div class="p-4 shadow-sm rounded h-100 bento-research">
-                        <strong>UX Research:</strong>
-                        <p>Comprendo a los usuarios mediante metodologías cualitativas y cuantitativas.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="p-4 shadow-sm rounded h-100 bento-architecture">
-                        <strong>Arquitectura de Información:</strong>
-                        <p>Organizo y estructuro el contenido para garantizar claridad y navegabilidad.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="p-4 shadow-sm rounded h-100 bento-workshops">
-                        <strong>Workshops:</strong>
-                        <p>Facilito sesiones de co-creación como product discovery, diseño de canvas y otras dinámicas
-                            para alinear equipos y objetivos.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row g-3 mt-3">
-                <!-- Segunda fila -->
-                <div class="col-md-3">
-                    <div class="p-4 shadow-sm rounded h-100 bento-service">
-                        <strong>Service Design:</strong>
-                        <p>Diseños integrales que conectan servicios y puntos de contacto para experiencias fluidas.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="p-4 shadow-sm rounded h-100 bento-ops">
-                        <strong>Design Ops:</strong>
-                        <p>Optimización de procesos y herramientas de diseño para mejorar la colaboración y la
-                            eficiencia.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="p-4 shadow-sm rounded h-100 bento-ui">
-                        <strong>Diseño de Interfaces (UI):</strong>
-                        <p>Creo interfaces visuales consistentes, accesibles y atractivas.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="portfolio" class="container py-5" data-aos="fade-right" data-aos-duration="800">
-            <h3 class="section-title text-center h3--index">Explora mi trabajo</h3>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <picture>
-                            <source srcset="assets/envo.webp" type="image/webp">
-                            <img src="assets/envo.png" alt="Portada Envo Chat" class="img-fluid">
-                        </picture>
-                        <div class="card-body">
-                            <h4 class="card-title">Envo chat</h4>
-                            <p class="card-text">Plataforma de chat multicanal</p>
-                            <a href="envo.html" class="btn btn--primary">Ver proyecto</a>
+        
+                <!-- Columna con formulario -->
+                <div class="col-lg-6">
+                    <h2 class="h2-services">¿Hablamos sobre tu proyecto?</h2>
+                    <p class="mb-4">Estoy disponible para colaborar en proyectos de diseño y experiencias digitales. 
+                       Completa el formulario y te responderé lo antes posible.</p>
+                    
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-6  mb-4">
-                    <div class="card">
-                        <picture>
-                            <source srcset="assets/kibernum.webp" type="image/webp">
-                            <img src="assets/kibernum.png" alt="Portada Kibernum" class="img-fluid">
-                        </picture>
-                        <div class="card-body">
-                            <h4 class="card-title">Sitio web Kibernum 2020</h4>
-                            <p class="card-text">Rediseño de sitio web corporativo</p>
-                            <a href="kibernum.html" class="btn btn--primary">Ver proyecto</a>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="tucorreo@ejemplo.com" required>
                         </div>
-                    </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Cuéntame sobre tu idea" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary px-4">Enviar mensaje</button>
+                    </form>
                 </div>
             </div>
         </section>
+        
+        
     </main>
+
     <footer class="footer mt-5 py-4">
         <div class="container">
             <div class="row text-center text-md-start align-items-center">
@@ -239,6 +149,7 @@
             </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
