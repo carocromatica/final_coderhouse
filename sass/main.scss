@@ -1,11 +1,16 @@
 @use "foundations/variables";
+@use "foundations/reset";
 @use "components/buttons";
 @use "components/headings";
 @use "components/cards";
 @use "components/navbar";
+@use "components/overlay";
+@use "components/_skip-link";
+@use "components/video";
 @use "layout/bento";
+@use "layout/blobs";
+@use "layout/expercience-section";
 @use "layout/hero-section";
 @use "layout/hero-services";
 @use "layout/footer";
-@use "layout/css";
-@use "layout/blobs";
+

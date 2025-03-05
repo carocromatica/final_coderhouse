@@ -1,0 +1,13 @@
+//div experiencia en index.html
+.experience-section {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 8rem 0;
+}
+
+
+@media (max-width: 768px) {
+    .experience-section {
+        padding: 40px 0;
+    }
+}

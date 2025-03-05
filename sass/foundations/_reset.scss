@@ -1,0 +1,38 @@
+@use "../foundations/variables" as *;
+@use "sass:color";
+
+// css clásico
+
+body {
+    font-family: $font-family;
+    font-optical-sizing: auto;
+    color: $body-color;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+section {
+    scroll-margin-top: 100px; /* Ajusta según la altura del navbar */
+    width: 70%!important;}
+
+   main {
+        scroll-margin-top: 100px; /* Ajusta según la altura del navbar */
+    }
+
+@media (max-width: 768px) { 
+    section {
+        width: 100% !important; 
+    }    }
+
+    header {
+        scroll-margin-top: 80px; /* Ajusta según la altura del navbar */
+        width: 70%!important;}
+    
+    @media (max-width: 768px) { 
+        header {
+            width: 100% !important; 
+        }    }
+
+

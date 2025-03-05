@@ -1,0 +1,11 @@
+// video
+.video-wrapper {
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .video-wrapper {
+        width: 80%;
+    }
+}
